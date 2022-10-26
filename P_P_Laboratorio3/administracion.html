@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/validaciones.css">
+    <title>Administracion</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="link-logo"><img src="./images/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Nosotros</a></li>
+                <li><a href="./administracion.html">Administracion</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <h1>Administracion</h1>
+        <img src="./images/banner.jpg" alt="banner-animales" id="img-main">
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Informacion del Anuncio</legend>
+
+                    <input type="hidden" name="id">
+
+                    <h3>Titulo</h3>
+
+                    <input type="text" name="titulo" placeholder="Titulo" class="input-modificacion" autocomplete="off" required>
+                    <span></span>
+                    <br><br>
+
+                    
+                    <h3>Descripcion</h3>
+                    <input type="text" name="descripcion" placeholder="Descripcion" class="input-modificacion" autocomplete="off" required>
+                    <span></span>
+                    <br><br>
+                    
+                    <h3>Animal</h3>
+                    <span>Perro</span><input type="radio" name="animal" value="Perro" class="radio-modificacion" checked><br>
+                    <span>Gato</span><input type="radio" name="animal" value="Gato" class="radio-modificacion"><br>
+
+                    <h3>Precio</h3>
+                    <input type="number" name="precio" placeholder="Precio" class="input-modificacion" autocomplete="off" required>
+                    <span></span>
+                    <br><br>
+
+                    <img src="./images/perro.png" alt="Icono perro" class="iconos"><h3 class="titulo-icono">Raza</h3>
+                    <input type="text" name="raza" placeholder="Raza" class="input-modificacion" autocomplete="off" required>
+                    <span></span>
+                    <br><br>
+
+                    <img src="./images/ciguena.png" alt="Cigueña" class="iconos"><h3 class="titulo-icono">Fecha de Nacimiento</h3>
+                    <input type="date" name="fecha" placeholder="Fecha" class="input-modificacion" autocomplete="off" required>
+                    <span></span>
+                    <br><br>
+
+                    <img src="./images/jeringuilla.png" alt="Vacuna" class="iconos"><h3 class="titulo-icono">Vacuna</h3>
+                    <select name="vacuna" class="input-modificacion">
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                    <span></span>
+                    <br><br>
+
+                    <input type="submit" id="btnSubmit" value="Guardar" class="botones">
+                    <input type="button" id="btnEliminar" class="oculto botones" value="Eliminar">
+                    <input type="button" id="btnLimpiar" class="oculto botones" value="Limpiar">
+
+                </fieldset>
+            </form>
+            <div id ="spinner-container"></div>
+            <div id="divLista"></div>
+            </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Nosotros</a></li>
+                <li><a href="./administracion.html">Administracion</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>  
+        </nav>
+        <p>Todos los derechos reservados <date>2022</date>&copy;</p>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
